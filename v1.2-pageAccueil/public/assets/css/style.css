@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+main h1.accueil_title {
+    font-size: 2rem;
+}
+
+main h2.accueil_subTitle {
+    font-size: 1.5rem;
+}
+
+section.article {
+    display: flex;
+}
+
+section img.photoArticle1,
+section img.photoArticle2 {
+    width: 30%;
+}
+
+section img.photoArticle1 {
+    margin-left: 0.5em;
+}
+
+section img.photoArticle2 {
+    margin-right: 0.5em;
+}
+
+main section.article p {
+    text-align: justify;
+    color: #444;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+
+@media (max-width: 991px) { 
+
+    /* permet de placer le formulaire de recherche à droite */
+    header nav .searchBarre {
+        display: inline-grid;
+    }
+
+    header nav .searchBarre input {
+        text-align: right;
+    }
+
+    header nav .searchBarre .btn-outline-success {
+        display: inline-block;
+        width: 3em;
+        margin: 2px auto;
+    }
+    
+    /* main div.article_1, 
+    main div.article_2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main img.photoArticle1, 
+    main img.photoArticle2 {
+       margin: 0;
+    } */
+}
+
+@media (max-width: 767px) {
+    
+    header nav.navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header nav .searchBarre { 
+        display: inline-flex;
+        margin-top: 0.3em;
+    }    
+
+    header nav .searchBarre input {
+        text-align: left;        
+    }
+}
+
+@media (max-width: 575px) {
+    
+    header nav .searchBarre  {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 490px) {
+    
+    header nav.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul.nav {
+        flex-direction: column;
+    }
+
+    header nav.navbar li {
+        text-align: center;
+    }
+}
