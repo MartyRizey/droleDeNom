@@ -20,15 +20,6 @@ main h2.accueil_subTitle {
     margin: 0.5em 0 0.5em 0;
 }
 
-/* section.article {
-    display: flex; 
-}*/
-
-/* section img.photoArticle1,
-section img.photoArticle2 {
-    width: 30%;
-} */
-
 main section.article p {
     text-align: justify;
     color: #444;
@@ -37,6 +28,26 @@ main section.article p {
 
 footer.navbar {
     display: block;    
+}
+
+@media (max-width: 1199px){
+    section.article img {
+        width: 50%;
+        margin: auto;
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        -ms-border-radius: 10%;
+        -o-border-radius: 10%;
+    }
+
+    section.article_1 img.photoArticle1 {
+        margin-top: 0.5em;
+    }
+
+    section.article_2 img.photoArticle2 {
+        margin-bottom: 0.5em;
+    }
 }
 
 @media (max-width: 991px) { 

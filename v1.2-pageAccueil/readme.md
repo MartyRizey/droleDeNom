@@ -48,11 +48,14 @@
         - dossier : inc/nav_path.php
     
 - *Dossier* : __v1.2-pageAccueil__.
-    - fichier *reset.css* ou *normelize* ou *reboot*  -- A FAIRE --
+    - fichier *reset.css* ou *normelize* ou *reboot*  
     - Installation pluging vs-code *css-auto-prefix*
     - Intégration HTML et CSS pour la page d'acceuil.
-    - Responsive Web Design.
     - Redécoupage du fichier doctypeHeader-tpl.php en 2 fichiers, doctype-tpl.php et header-tpl.php
-    - Mise en place des liens vers les pages via des constantes.
+    - Mise en place des liens vers les pages via des constantes et autres méthodes.
+    - Responsive Web Design.
+    idées : rendre l'image cliquable pour l'agrandir dans une autre fenêtre.
+    --------- *&#60;a href="chemin de l'image" target="_blank"&#62;&#60;/a&#62;*
+
 
 
