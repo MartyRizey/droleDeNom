@@ -110,10 +110,74 @@ form fieldset button#btn_send_datas:hover {
 
 /* ---------- page listeAdherents.php ---------- */
 
+#adherentsList {
+    padding: 0 3em 3em 3em;
+}
+
 .title_page {
     margin-top: 0.8em;
 }
 
+/* .btn-displayDataSubmit,
+.btn-group {
+    margin-bottom: 1em;
+} */
+
+#adherentsSort_btn,
+.btn-displayDataSubmit,
+.btn-noSort,
+#adherentsList_item thead tr th {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#adherentsSort_btn {
+    display: initial;
+}
+
+#adherentsSort_btn .dropdown-menu.show {
+    border: solid #92C7FF 1px;
+    box-shadow: 1px 1px 5px silver;
+    width: 11em;
+}
+
+#adherentsSort_btn .btn-group .dropdown-menu a {
+color: rgb(2, 99, 245);
+} 
+
+#adherentsSort_btn .btn-group .dropdown-menu a:hover {
+    color: rgb(2, 38, 92);
+    font-weight: bold;
+} 
+
+.btn-noSort {
+    margin-left: 0.3em;
+}
+
+#adherentsList_item thead {
+    line-height: 4em;
+}
+
+#adherentsList_item thead tr th {
+    width: calc(100%/6);
+    font-weight: bold;
+    text-align: center;
+}
+
+#adherentsList_item tbody tr {
+    line-height: 1.5em;    
+}
+
+/* Couleur grise une ligne sur deux */
+#adherentsList_item tbody tr:nth-child(2n) {
+    color: gray;    
+}
+
+#adherentsList_item tbody tr td {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 0.3em;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
 
 /* ________________ footer ________________ */
 
@@ -169,6 +233,12 @@ footer.navbar {
         margin: 2px auto;
         padding: 0.2em;
     }
+
+    /* On cache la colonne 'Age' */
+    main #adherentsList_item th.hidden,
+    main #adherentsList_item td.hidden {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -195,6 +265,14 @@ footer.navbar {
     form #civility_datas input,
     form #contact_datas input {
         margin-top: 0.5em;
+    }
+
+    /* On cache les colonnes 'Age' et 'Email' */
+    main #adherentsList_item th.hidden,
+    main #adherentsList_item td.hidden,
+    main #adherentsList_item th.hiddenBis,
+    main #adherentsList_item td.hiddenBis {
+        display: none;
     }
 
     footer section.nav {

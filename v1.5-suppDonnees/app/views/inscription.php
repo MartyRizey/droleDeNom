@@ -4,6 +4,7 @@
     require __DIR__.'/templates/header-tpl.php';
     require __DIR__.'/../inc/breadcrumb.php'; 
     require __DIR__.'/../inc/nav_path.php';
+
 ?>
 
 <!-- l'attribut 'action' cible le fichier qui traite les données -->
@@ -14,7 +15,7 @@
         <?php
             // Fil d'Ariane
             $fil = get_fil_ariane(array('accueil.php' => 'Accueil', '#' => 'Inscription'));
-            require __DIR__.'/templates/breadcrumb_tpl.php';
+            require __DIR__.'/templates/breadcrumb-tpl.php';
         ?>
 
         <div class="enter_datas">

@@ -38,7 +38,7 @@
 
 - *Dossier* : __v1.0-structure__.
     - Arborescence et architecture des dossiers.    
-.    
+----   
 - *Dossier* : __v1.1-templates__.
     - Création des fichiers de vues des pages.
         - *accueil.php* / *inscription.php* / *listeAdherents.php* / *contact.php*
@@ -46,7 +46,7 @@
         - *doctypeHeader-tpl.php* / *footer_tpl.php*
     - Création d'un fichier pour les chemins absolus vers les pages de la *nav* ou autres chemins.
         - dossier : *inc/nav_path.php*
-.    
+----  
 - *Dossier* : __v1.2-pageAccueil__.
     - fichier *reset.css* ou *normelize* ou *reboot*  
     - Installation pluging vs-code *css-auto-prefix*
@@ -58,10 +58,19 @@
     - Responsive Web Design, via `Bootstrap`,`Flexbox` et `Media Queries`
     - Idées : rendre l'image cliquable pour l'agrandir dans une autre fenêtre.
     --------- *`<a href="chemin de l'image" target="_blank"></a>`*  
-.
+----
 - *Dossier* : __v1.3-pageInscription__.
     - Création du formulaire : HTML/CSS.
-    - Responsive Web Design de la page, via du `flexbox` et `media Queries`.
+    - Responsive Web Design de la page, via du `flexbox` et `media Queries`.  
+    - Mise en place d'un fil d'Ariane sur les pages.
+        - fichier -> *breadcrumb.php* dans le dossier *app/inc*
+        - fichier -> *breadcrumb_tpl.php* dans le dossier *app/views/templates*
+    - *Etape 2 : *insertion des données du formulaire en Bdd*      
+        - Paramètrer la connection à la Base de données -> *app/Models/paramConnexBdd.php*
+        - Connection à la Base de données -> *app/Models/connexBdd.php*
+        - Ajout d'un fichier *DatasForm_ctrl.php* dans le dossier *app/Controller*
+        - Ajout d'un fichier *insertDatasBdd_sql.php* dans le dossier *app/Models*
+
 
 
 
